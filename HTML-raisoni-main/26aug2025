@@ -1,0 +1,52 @@
+<!doctype>
+<html>
+<head><title>list demo</title></head>
+<body>
+    <h1>UPPERCASE ORDERED LISTING</h1>
+    <ol type="A">
+        <li>item 1.</li>
+        <li>item 2.</li>
+        <li>item 3.</li>
+        <li>item 4.</li>
+        <li>item 5.</li>
+    </ol>
+    <h1>lowercase ordered listing</h1>
+    <ol type="a">
+        <li>item 1.</li>
+        <li>item 2.</li>
+        <li>item 3.</li>
+        <li>item 4.</li>
+        <li>item 5.</li>
+    </ol>
+    <h1>roman ordered listing</h1>
+    <ol type="I">
+        <li>item 1.</li>
+        <li>item 2.</li>
+        <li>item 3.</li>
+        <li>item 4.</li>
+        <li>item 5.</li>
+    </ol>
+    <h1>unordered listing</h1>
+    <ul >
+        <li>item 1.</li>
+        <li>item 2.</li>
+        <li>item 3.</li>
+        <li>item 4.</li>
+        <li>item 5.</li>
+    </ul>
+    <h1>mix ordered listing</h1>
+    <ol type="1">
+        <li>item 1.</li>
+        <li>item 2.</li>
+        <li>item 3.</li>
+        <ul>
+            <li>item.</li>
+            <li>item.</li>
+        </ul>
+        <li>item 4.</li>
+        <li>item 5.</li>
+    </ol>
+    <a href="index.html">go back</a>
+
+</body>
+</html>
