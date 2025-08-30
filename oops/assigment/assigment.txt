@@ -1,0 +1,17 @@
+***********************assigment question of OOPs***********************
+
+1.  what is object oriented programing? explain it''s importance.
+2.  write a short note on 
+		a. encapsulation
+		b. abstraction 
+		c. inheritance
+3.  explain class and object in c++ with the help of example.
+4.  explain the role of assecc specifier in encapsulation.
+5.  what are constructor and ditructor? explain their purpose with example.
+6.  explain ternary operator in OOPs.
+7.  explain switch case with the help of an example.
+8.  explain object as a function argument with example.
+9.  create a class called as student with attributes name, roll_number, marks. write the program to create a object of a class. 
+    Accept the details from the user and display student information
+10. create a class reactangle with private members as length and breadth include cunstructor to initialize a method to calculate 
+    and return the area a distructor that print the messege, when the object is distroyed.
