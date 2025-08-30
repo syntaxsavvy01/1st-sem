@@ -1,0 +1,44 @@
+//30 august 2025
+//Bibhu Kumar Mishra
+/*create a class reactangle with private members as length and breadth include cunstructor to initialize a method to calculate 
+    and return the area a distructor that print the messege, when the object is distroyed.*/
+
+#include<iostream>
+using namespace std;
+
+class Rectangle {
+private:
+    float length, breadth;   // private data members
+
+public:
+    // Parameterized Constructor: initializes length and breadth
+    Rectangle(float l, float b) {
+        length = l;
+        breadth = b;
+        cout << "Rectangle object created with length = " << l 
+             << " and breadth = " << b << endl;
+    }
+
+    // Method to calculate area of the rectangle
+    float calculation() {
+        return length * breadth;
+    }
+
+    // Method to display area
+    void display() {
+        cout << "Area of the rectangle is " << calculation() << endl;
+    }
+
+    // Destructor: called automatically when object is destroyed
+    ~Rectangle() {
+        cout << "Rectangle object with length " << length 
+             << " and breadth " << breadth << " is destroyed!" << endl;
+    }
+};
+
+// Main function: program execution starts here
+int main() {
+    Rectangle obj(67.84, 54);  // creating object with given length and breadth
+    obj.display();              // display area of rectangle
+    return 0;                   // program ends, destructor will be called
+}
