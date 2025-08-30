@@ -26,7 +26,7 @@ class student{
 
     // Member function to display student details
     void display_details(){
-        cout<<"Roll number of "<<name<<" is "<<roll_number<<" and got "<<marks<<".";
+        cout<<"Roll number of "<<name<<" is "<<roll_number<<" and got "<<marks<<"."<<endl;
     }
 };
 
