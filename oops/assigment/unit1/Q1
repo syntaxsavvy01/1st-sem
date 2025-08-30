@@ -1,0 +1,47 @@
+//30 august 2025
+//Bibhu Kumar Mishra
+/*create a class called as student with attributes name, roll_number, marks. write the program to create a object of a class. 
+Accept the details from the user and display student information*/
+
+#include<iostream>
+using namespace std;
+
+// Define a class called 'student' with private data members
+class student{
+    // Private data members
+    string name;           // To store student's name
+    int roll_number;       // To store student's roll number
+    float marks;           // To store student's marks
+    
+    public:
+    // Member function to accept student details from user
+    void scan_details(){
+        cout<<"Enter the name of student: ";
+        cin>>name;
+        cout<<"Enter the roll number of student: ";
+        cin>>roll_number;
+        cout<<"Enter the marks of student: ";
+        cin>>marks;
+    }
+
+    // Member function to display student details
+    void display_details(){
+        cout<<"Roll number of "<<name<<" is "<<roll_number<<" and got "<<marks<<".";
+    }
+};
+
+// Main function - program execution starts here
+int main(){
+    student obj;    // Create an object of student class
+    
+    // Display header message
+    cout<<"********************************Enter the details of student.********************************"<<endl<<endl;
+    
+    // Call member function to input student details
+    obj.scan_details();
+    
+    // Call member function to display student details
+    obj.display_details();
+
+    return 0;    // Indicate successful program termination
+}
