@@ -1,0 +1,77 @@
+cunstrucor overloading: it allows the class tohave multiple cunstuctoreach with the same name but with diff. parameter. this enables the object of the classto be inisialized in
+various ways, provides flexibility in the program. when an object is created, compiler determines which cunstructor to call based on the argument provided during the object 
+instantiation. the compiler looks for a constructor  whoose parameter listlike number of argument, type of argument and their order matches the argument passes during the object
+creatation.
+
+
+
+//02 september 2025
+//bibhu kumar mishra
+/*create a class with name 'box' , data-member should length, breadth, height in private, inisialize the varibals using default cunmstuctor,
+	create cunstructor overload for volume of cube and box.*/
+	
+#include<iostream>
+using namespace std;
+class box{
+	private:
+		float length,breadth, heigth;
+	
+	public:
+		box(){
+			length = 1;
+			breadth = 1;
+			heigth = 1;
+			cout << "Volume of default box: " << length * breadth * heigth << endl;
+		}
+		
+		box(float side){
+			length = side;
+			breadth = side;
+			heigth = side;
+			cout<<"Volume of cube is "<<length * breadth * heigth<<endl;
+		}
+		
+		box(float l, float b, float h){
+			cout<<"Volume of box is "<<l*b*h<<endl;
+		}
+		
+		~box(){
+			cout<<"ALL INSTANCES ARE CLEARED."<<endl;
+		}
+		
+};
+
+int main(){
+	int type;
+	float sides,l,b,h;
+	cout<<"Enter the 1 for default volume."<<endl;
+	cout<<"Enter the 2 for cube volume."<<endl;
+	cout<<"Enter the 3 for box volume."<<endl;
+	cin>>type;
+	
+	box obj;
+	
+	if(type==1){
+		obj.box();
+	}
+	else if(type==2){
+		cout<<"Enter the side of cube."<<endl;
+		cin>>sides;
+		obj.box(sides);
+	}
+	else{
+		cout<<"Enter the length of box."<<endl;
+		cin>>l;
+		cout<<"Enter the breadth of box."<<endl;
+		cin>>b;
+		cout<<"Enter the heigth of box."<<endl;
+		cin>>h;
+		obj.box(l,b,h);
+	}
+	obj.~box();
+	return 0;
+}
+
+
+
+ERROR HAI
