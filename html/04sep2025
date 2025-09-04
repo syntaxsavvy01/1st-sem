@@ -1,0 +1,96 @@
+    <!doctype>
+<html>
+    <head>
+        <title>Document</title>
+        <style>
+            table,tr,th,td{
+                border: 1px dashed rgb(167, 9, 9);
+            }
+            table{
+                    height: 100px; width: 500px;
+            }
+
+            td{
+                text-align: center;
+            }
+
+        </style>
+    </head>
+    <body>
+       <table>
+        <tr>
+            <th>First name</th>
+                
+                <th>Lsat name</th>
+                <th>Age</th>
+                <th>Phone number</th>
+            
+        </tr>
+        <tr>
+            <td> Bibhu</td>
+            <td> Mishra</td>
+            <td> 23 </td>
+            <td> 1234567890 </td>
+        </tr>
+        <tr>
+            <td> Abhishek</td>
+            <td> Yadav</td>
+            <td> 22 </td>
+            <td> 567891234 </td>
+        </tr>
+        <tr>
+            <td>Anshika</td>
+            <td> Tiwari</td>
+            <td> 21 </td>
+            <td> 1234567890 </td>
+        </tr>
+       </table>
+
+        <br><br><br>
+
+       <table>
+        <tr>
+            <th>Course</th>
+            <th rowspan="2">Elevation Academy</th>
+        </tr>
+
+        <tr>
+            <td>MCA</td>
+            <td>7549403697</td>
+            <td>7549403697</td>
+
+        </tr>
+
+        <tr>
+            <td>BCA</td>
+            <td>7370086478</td>
+            <td>7549403697</td>
+        </tr>
+       </table>
+    
+       <br><br><br>
+
+       <table>
+        <tr>
+            <th>Course</th>
+            <th colspan="6">Elevation Academy</th>
+        </tr>
+
+        <tr>
+            <td>MCA</td>
+            <td>7549403697</td>
+            <td>7549403697</td>
+            <td>7549403697</td>
+            <td>7549403697</td>
+            <td>7549403697</td>
+            <td>7549403697</td>
+        </tr>
+
+        <tr>
+            <td>BCA</td>
+            <td>7370086478</td>
+            
+        </tr>
+       </table>
+    </body>
+</html>
