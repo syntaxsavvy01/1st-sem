@@ -1,0 +1,57 @@
+*********************operator overloadig*********************
+	* compile time polymorphism
+	
+List of operator which cann't be overloaded
+	1. sizeof
+	2. ternary 
+	3. pointer to member
+	4. scope resolution
+	5. typedef
+	
+types of operator overloading:
+	1. unary operator overloading:
+	2. binary operator overloading:
+
+With the help of member function and friend function we can overload the operator .
+
+SYNTAX:
+	return_type operator_keyword symbol(argument){
+		//block of code
+	}
+
+example:
+	void operator -(){
+		--a;
+	}
+	
+calling in main function:
+	symbol name_of_object
+
+#include<iostream>
+using namespace std;
+
+class abc{
+	int m,n;
+	public:
+		abc(){
+			m=5;
+			n=8;
+		}
+		 void show(){
+		 	cout<<m<<", "<<n<<endl;
+		 }
+		 
+		 void operator -(){
+		 	m*=5;
+		 	n*=5;
+		 }
+		 
+};
+
+int main(){
+	abc obj;
+	obj.show();
+	-obj;
+	obj.show();
+	return 0;
+}
