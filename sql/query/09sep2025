@@ -55,7 +55,7 @@ select * from emp where (select sqrt(emp_no)=floor(sqrt(emp_no)));
 
 -- 3) write an sql query to find the average salary (round up to the nearest integer) for each department as "avg_salary" and display the department name along 
 -- with the aqverage salary
-
+select department, round(avg(salary)) as avg_salary from emp group by department;
 
 -- 4) Write a SQL query to find new salary of the employee, calculated by subtracting 50,000 from their current salary as "new_salary" and 
 -- return only positive values. Also fetch first name of the employee.
