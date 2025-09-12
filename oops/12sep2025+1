@@ -1,0 +1,37 @@
+
+#include<iostream>
+using namespace std;
+
+class equal{
+	public:
+		int n;
+	
+
+		void get_data(){
+			cout<<"Enter the number: "<<endl;
+			cin>>n;
+			cout<<"**************************"<<endl;
+		}
+		
+		equal operator == (equal ob){
+			if(n==ob.n){
+				return 1;
+			}
+			else{
+				return 0;
+			}
+		}
+		
+};
+
+int main(){
+	equal obj1, obj2;
+	
+	obj1.get_data();
+	obj2.get_data();
+	
+	cout<<obj1.n == obj2.n;
+
+	return 0;
+}
+
