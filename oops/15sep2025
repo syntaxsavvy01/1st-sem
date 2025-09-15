@@ -1,0 +1,57 @@
+// 15 september 2025
+// bibhu kumar mishra
+#include <iostream>
+using namespace std;
+
+class rectangle;
+class square{
+	private:
+		int side;
+	
+	public:
+		square (int s){
+			side = s;
+		}
+		
+		//declare friend
+		friend void compare(square, rectangle);
+};
+
+class rectangle{
+	private:
+		int length , breadth;
+		public:
+			rectangle(int l, int b){
+				length = l;
+				breadth = b;
+			}
+			
+			//declare friend
+			friend void compare (square, rectangle);
+};
+
+// friend function definition
+
+void compare(square s, rectangle r){
+	int areas = s.side * s.side;
+	int arear = r.length * r.breadth;
+	
+	cout<<"Area of square: "<<areas<<" and area of rectangle: "<<arear<<"."<<endl;
+	
+	if (areas>arear){
+		cout<<"Area of square is larger."<<endl;
+	}
+	else{
+		cout<<"Area of rectangle is larger."<<endl;
+	}
+}
+
+int main(){
+	
+	square s(5);
+	rectangle r(4,6);
+	
+	compare(s,r);
+	
+	return 0;
+}
