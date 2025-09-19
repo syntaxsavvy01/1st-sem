@@ -1,0 +1,41 @@
+//08 september 2025
+//bibhu kumar mishra
+#include<iostream>
+using namespace std;
+
+class distance{
+	private:
+		int feet, inches;
+	
+	public:
+
+
+	
+	distance( int f, int i){
+		feet = f;
+		inches = i;
+	}
+	
+	friend distance operator - (distance n);
+	
+	void displaydistance(){
+		cout<<"F: "<<feet<<"I: "<<inches<<endl;
+	}
+	
+
+};
+
+	//overloading minus(-) operator
+	distance operator - (distance n){
+		distance temp;
+		temp.feet=-n.feet;
+		temp.inches = -n.inches;
+		return temp;
+	}
+
+int main(){
+	distance d1(11,10), d2(-5,11);
+	d1.displaydistance();
+	d2.displaydistance();
+	return 0;
+}
