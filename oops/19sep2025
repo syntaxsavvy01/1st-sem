@@ -1,0 +1,52 @@
+// 19 september 2025
+// bibhu kumar mishra
+
+#include<iostream>
+using namespace std;
+
+class complex{
+	int r,i;
+	
+	public:
+		void get_data(){
+			cout<<"Enter the value of real part of complex number: ";
+			cin>>r;
+			cout<<"Enter the value of imaginary part of complex number: ";
+			cin>>i;
+			cout<<"*********************************************************"<<endl;
+		}
+		
+		complex (int real=0, int imz=0){
+			r = real;
+			i = imz;
+		}
+		
+		//friend function declaration for binary +
+		friend complex operator + (complex c1, complex c2);
+		
+			void display(){
+			cout<<r<<" + "<<i<<"i"<<endl;
+		}
+
+		
+		};
+		complex operator + (complex c1, complex c2){
+			complex t;
+			t.r = c1.r + c2.r;
+			t.i = c1.i + c2.i;
+			return t;
+		}
+		
+	
+
+int main(){
+	complex c1, c2, result;
+	
+	c1.get_data();                               
+	c2.get_data();
+	
+	result = c1+c2;
+	
+	result.display();
+	return 0;
+}
