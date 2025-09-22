@@ -1,31 +1,39 @@
-// 22 september 2025
-// bibhu kumar mishra
+// 22 September 2025
+// Bibhu Kumar Mishra
 
 #include <iostream>
 using namespace std;
 
-class number{
-	int value;
-	
-	public:
-		number(int v = 0){
-			value = v;
-		}
-		
-		friend int operator == (number n1,  number n2);
-};		
-		int operator == (number n1, number n2){
-			return (n1.value == n2.value);
-		}
+// Define a class 'number' to hold a value and support operator overloading
+class number {
+    int value;  // Private member variable to store the value of the number
 
+public:
+    // Constructor to initialize the value, defaulting to 0 if no value is provided
+    number(int v = 0) {
+        value = v;
+    }
 
-int main(){
-	number n1(10), n2(5);
-	if(n1==n2){
-		cout<<"Both are equal."<<endl;
-	}
-	else{
-		cout<<"Both are not equal."<<endl;
-	}
-	return 0;
+    // Friend function to overload the equality operator (==)
+    // This allows the use of '==' to compare two 'number' objects
+    friend int operator == (number n1, number n2);
+};
+
+// Definition of the overloaded equality operator (==)
+// Returns 1 if the values of both numbers are equal, otherwise returns 0
+int operator == (number n1, number n2) {
+    return (n1.value == n2.value);  // Compare the 'value' member of both 'number' objects
+}
+
+int main() {
+    number n1(10), n2(5);  // Create two 'number' objects with values 10 and 5 respectively
+
+    // Use the overloaded equality operator to check if n1 and n2 are equal
+    if (n1 == n2) {
+        cout << "Both are equal." << endl;  // Print if they are equal
+    } else {
+        cout << "Both are not equal." << endl;  // Print if they are not equal
+    }
+
+    return 0;  // Exit the program
 }
