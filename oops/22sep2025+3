@@ -1,0 +1,19 @@
+// 22 september 2025
+//bibhu kumar mishra
+// program for overload notequalto operator 
+
+#include <iostream>
+using namespace std;
+
+class notequal{
+	int number;
+	
+	public:
+		notequal(int n = 0){
+			number = n;
+		}
+		
+		friend bool operator != (notequal n1, notequal n2);
+};
+
+int operator != (notequal n1, notequal n2)
