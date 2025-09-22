@@ -13,22 +13,22 @@ class number{
 		}
 		
 		void display(){
-			cout<<"X: "<<x;
+			cout<<"X: "<<x<<endl;
 		}
-		friend number operator ++ (number &obj);
+		friend number operator ++ (number obj);
 };		
-		number operator ++ (number &obj){
+		number operator ++ (number obj){
 			number temp;
-			temp.x = ++obj.x
+			temp.x = ++obj.x;
 			return temp;
 		}
 
 
 int main(){
-	number n1(10), n2;
-	n2 = ++n1;
+	number n1(10);
+	++n1;
 	n1.display();
-	n2.display();
+//	n2.display();
 	return 0;
 }
 
