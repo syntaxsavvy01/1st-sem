@@ -13,14 +13,14 @@ class number{
 		}
 		
 		friend int operator == (number n1,  number n2);
-		
+};		
 		int operator == (number n1, number n2){
 			return (n1.value == n2.value);
 		}
-};
+
 
 int main(){
-	number n1=10, n2=5;
+	number n1(10), n2(5);
 	if(n1==n2){
 		cout<<"Both are equal."<<endl;
 	}
