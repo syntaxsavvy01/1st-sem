@@ -1,0 +1,43 @@
+// 22 september 2025
+// bibhu kumar mishra
+
+#include <iostream>
+using namespace std;
+
+class number{
+	int x;
+	
+	public:
+		number(int v = 0){
+			x = v;
+		}
+		
+		void display(){
+			cout<<"X: "<<x;
+		}
+		friend number operator ++ (number &obj);
+};		
+		number operator ++ (number &obj){
+			number temp;
+			temp.x = ++obj.x
+			return temp;
+		}
+
+
+int main(){
+	number n1(10), n2;
+	n2 = ++n1;
+	n1.display();
+	n2.display();
+	return 0;
+}
+
+
+
+
+
+
+
+
+
+
