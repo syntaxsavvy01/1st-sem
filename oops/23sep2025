@@ -1,0 +1,30 @@
+***********************pointer***********************
+
+	* Pointer is a variable which stores the memory address of other variable.
+	* It is used only in dynamically.
+
+syntax:  data_type * pointer_name = &variable_name;
+
+
+//23 september 2025
+//bibhu kumar mishra
+
+#include<iostream>
+using namespace std;
+
+int main(){
+	int x = 10;
+	int *p = &x;
+	
+	cout<<"Value of x = "<<x<<endl;
+	cout<<"Address of x = "<<&x<<endl;
+	cout<<"pointer p stores = "<<p<<endl;
+	cout<<"Value at *p = "<<*p<<endl<<endl<<endl<<endl<<endl<<endl;
+	
+	*p = 20;
+	cout<<"New value of x="<<x<<endl;
+	cout<<"New Address of x = "<<&x<<endl;
+	cout<<"New pointer p stores = "<<p<<endl;
+	cout<<"New Value at *p = "<<*p<<endl;
+	return 0;
+}
