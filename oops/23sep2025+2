@@ -1,0 +1,26 @@
+//23 september 2025
+//bibhu kumar mishra
+
+#include<iostream>
+using namespace std;
+
+
+	void swap(int *a, int *b){
+	 	int temp = *a;
+	 	*a = *b;
+	 	*b = temp;
+	 }
+	 
+	 void display(int a , int b){
+	 	cout<< "A = "<<a<<", B = "<<b<<endl;
+	 } 
+	 
+int main(){
+	
+	int a = 5, b=6;
+	 
+	display(a,b);
+	swap(&a,&b);
+	display(a,b);
+	return 0;
+}
