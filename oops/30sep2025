@@ -1,0 +1,30 @@
+//30 september 2025
+//bibhu kumar mishra
+
+#include<iostream>
+using namespace std;
+
+class base{
+	public:
+		int x;
+		void display (){
+			cout<<"Base class called. "<<endl;
+		}
+};
+
+class derived : public base{
+	public:
+		int y;
+		void show (){
+			cout<<"derived class called. "<<endl;
+		}
+};
+
+int main(){
+	derived obj;
+	obj.x = 5;
+	obj.y = 10;
+	obj.display();
+	obj.show();
+	return 0;
+}
