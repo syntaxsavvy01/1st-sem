@@ -14,8 +14,6 @@ vend_zip char(10),
 vend_country char(50),
 PRIMARY KEY (vend_id));
 
-
-
 CREATE TABLE products (
     prod_id char(10) NOT NULL,
     vend_id char(10),
@@ -26,20 +24,6 @@ CREATE TABLE products (
     FOREIGN KEY (vend_id) REFERENCES vendors (vend_id)
 );
 
-
-INSERT INTO products (prod_id, vend_id, prod_name, prod_price, prod_desc) VALUES
-('BR01', 'BRS01', '8 inch teddy bear', 5.99, '8 inch teddy bear, comes with cap and jacket'),
-('BR02', 'BR05', '12 inch teddy bear', 8.99, '12 inch teddy bear, comes with cap and jacket'),
-('BR03', 'BRS11', '18 inch teddy bear', 11.99, '18 inch teddy bear, comes with cap and jacket'),
-('BNBG01', 'DLL11', 'Fish bean bag toy', 3.49, 'Fish bean bag toy, complete with bean bag'),
-('BNBG02', 'DLL01', 'Bird bean bag toy', 3.49, 'Bird bean bag toy, eggs are not included'),
-('BNBG03', 'BNBG06', 'Rabbit bean bag toy', 3.49, 'Rabbit bean bag toy, comes with bean bag carrots'),
-('RGAN01', 'DLL21', 'Raggedy Ann', 4.99, '18 inch Raggedy Ann doll'),
-('RYL01', 'FNG11', 'King doll', 9.49, '12 inch king doll with royal garments and crown'),
-('RYL02', 'FNG01', 'Queen doll', 9.49, '12 inch queen doll with royal garments and crown');
-
-
-
 Insert into vendors (vend_id, vend_name, vend_address, vend_city, vend_state, vend_zip, vend_country) values
 ('BRS01','Bears R Us', '123 Main Street', 'Bear Town', 'MI', '44444', 'USA'), 
 ('BRE02', 'Bear Emporium', '500 Park Street','Anytown', 'OH', '44333', 'USA'),
@@ -47,3 +31,11 @@ Insert into vendors (vend_id, vend_name, vend_address, vend_city, vend_state, ve
 ('FRB01', 'Furball inc.', '1000 5th Avenue', 'New York', 'NY', '11111', 'USA'),
 ('FNG01', 'Fun and Games', '42 Galaxy Road', 'London', NULL, 'N16 6PS', 'England'), 
 ('JTSD1', 'Jouets et ours', '1 Rue Amusement', 'Paris', NULL, '45678', 'France');
+
+INSERT INTO products (prod_id, vend_id, prod_name, prod_price, prod_desc) VALUES
+('BR01', 'BRS01', '8 inch teddy bear', 5.99, '8 inch teddy bear, comes with cap and jacket'),
+('BR02', 'BRE02', '12 inch teddy bear', 8.99, '12 inch teddy bear, comes with cap and jacket'),
+('BR03', 'DLL01', '18 inch teddy bear', 11.99, '18 inch teddy bear, comes with cap and jacket'),
+('BNBG01', 'FRB01', 'Fish bean bag toy', 3.49, 'Fish bean bag toy, complete with bean bag'),
+('BNBG02', 'FNG01', 'Bird bean bag toy', 3.49, 'Bird bean bag toy, eggs are not included'),
+('BNBG03', 'JTSD1', 'Rabbit bean bag toy', 3.49, 'Rabbit bean bag toy, comes with bean bag carrots');
