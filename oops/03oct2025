@@ -1,0 +1,61 @@
+//03 oct 2025
+//Bibhu Kumar Mishra
+
+#include <iostream>
+using namespace std;
+
+class base{
+	public:
+		int pub = 1;
+	private:
+		int priv = 3;
+	protected:
+		int prot = 2;	
+	
+	
+};
+
+class derivedpublic: public base{
+	public:
+		void show(){
+			cout<<"Public Inheriteance: "<<endl;
+			cout<<"Public = "<<pub<<endl;
+			cout<<"protected = "<<prot<<endl;
+//			cout<<"privete= "<<priv<<endl;
+		}
+};
+
+class derivedprotected: protected base{
+	public:
+		void show(){
+			cout<<"Protected Inheriteance: "<<endl;
+			cout<<"Public = "<<pub<<endl;
+			cout<<"protected = "<<prot<<endl;
+//			cout<<"privete= "<<priv<<endl;
+		}
+};
+
+class deriveprivate: private base{
+	public:
+		void show(){
+			cout<<"Private Inheriteance: "<<endl;
+			cout<<"Public = "<<pub<<endl;
+			cout<<"protected = "<<prot<<endl;
+//			cout<<"privete= "<<priv<<endl;
+		}
+};
+
+int main(){
+	derivedpublic d1;
+	d1.show();
+	cout<<"Accessint public directly: "<<d1.pub<<endl;
+	
+//	derivedprotected d2;
+//	d2.show();
+//	cout<<"Accessint protected directly: "<<d2.prot<<endl;
+//	
+//	derivedprivate d3;
+//	d3.show();
+//	cout<<"Accessint private directly: "<<d3.priv<<endl;
+	return 0;
+}
