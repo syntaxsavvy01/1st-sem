@@ -1,4 +1,8 @@
-***********************assigment question of OOPs***********************
+**********************************************assigment question of OOPs**********************************************
+
+
+***************************************Unit-1-Assignment-Question***************************************
+
 
 1.  what is object oriented programing? explain it''s importance.
 2.  write a short note on 
@@ -15,3 +19,15 @@
     Accept the details from the user and display student information
 10. create a class reactangle with private members as length and breadth include cunstructor to initialize a method to calculate 
     and return the area a distructor that print the messege, when the object is distroyed.
+
+
+***************************************Unit-2-Assignment-Question***************************************
+
+
+1. Explain polymorphism and its type briefly.
+2. Explain function overloading in c++.
+3. Expalin constructor overoading in details.
+4. Explain binary operator overloading with the help of an example.
+5. write a program to overload unary operator '-' .
+6. What is this pointer.
+7. Explain static data member and member function of a class.
