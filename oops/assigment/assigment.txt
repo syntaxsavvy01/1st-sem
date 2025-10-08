@@ -4,7 +4,7 @@
 ***************************************Unit-1-Assignment-Question***************************************
 
 
-1.  what is object oriented programing? explain it''s importance.
+1.  what is object oriented programing? explain it's importance.
 2.  write a short note on 
 		a. encapsulation
 		b. abstraction 
@@ -31,3 +31,4 @@
 5. write a program to overload unary operator '-' .
 6. What is this pointer.
 7. Explain static data member and member function of a class.
+
