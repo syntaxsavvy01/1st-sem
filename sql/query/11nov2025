@@ -1,0 +1,6 @@
+**Two Phase Locking Protocol
+**Two Phase Commit Protocol 
+  phase 1:
+  1. co-ordinator send a message that "can i commit" to all participant.
+  phase 2:
+  1. impliment the decision at all sites.
