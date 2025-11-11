@@ -1,0 +1,42 @@
+// Online C++ compiler to run C++ program online
+#include <iostream>
+using namespace std;
+
+int main() {
+    int x ;
+    cout<<"Enter the number: ";
+    cin>>x;
+    
+    try{
+        if(x==0)
+            throw 0;
+        else if(x==1)
+            throw 'A';
+        else if (x==2)
+            throw 'B';
+        else if (x==3)
+            throw 3245.245;
+        else
+            cout<<"No exception. "<<endl;
+    }
+    catch (int const* e){
+        cout<<"Caught integer exception: "<<e<<endl;
+    }
+    
+    catch (char const*  e){
+        cout<<"Caught char exception: "<<e<<endl;
+    }
+    
+     catch (char const*  e){
+        cout<<"Caught char exception: "<<e<<endl;
+    }
+    
+    catch (double const*  e){
+        cout<<"Caught double exception: "<<e<<endl;
+    }
+    
+    catch (...){
+        cout<<"Caught unkown exception: "<<endl;
+    }
+    return 0;
+}
