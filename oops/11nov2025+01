@@ -1,0 +1,20 @@
+// Online C++ compiler to run C++ program online
+#include <iostream>
+using namespace std;
+
+int main() {
+    int a = 5, b = 0, result;
+    try{
+        if(b == 0){
+            throw "division not allowed.";
+        }
+        else
+         cout<<a/b;
+    }
+    
+    catch ( char const* msg){
+        cout<<"Exception caught: "<<msg<<endl;
+    }
+
+    return 0;
+}
