@@ -1,0 +1,26 @@
+// Online C++ compiler to run C++ program online
+#include <iostream>
+using namespace std;
+
+template <class t>
+    class box{
+        t value;
+        public:
+        box(t v){
+            value = v;
+        }
+        void display(){
+            cout<<"value: "<<value<<endl;
+        }
+    };
+
+int main() {
+    box<int> obj1(100);
+    box<double> obj2(100.545);
+    box<string> obj3("bibhu");
+
+    obj1.display();
+     obj2.display();
+      obj3.display();
+    return 0;
+}
