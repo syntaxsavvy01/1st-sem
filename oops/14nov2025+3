@@ -1,0 +1,28 @@
+//ERROR HAI
+#include <iostream>
+using namespace std;
+
+template <class t, class t2>
+    class box{
+        t value;
+        t2 val;
+        public:
+        box(t v, t2 va){
+            value = v;
+            val = va;
+        }
+        void display(){
+            cout<<"value: "<<value<<" and "<<val<<endl;
+        }
+    };
+
+int main() {
+    box<int, float> obj1(100,25.2);
+    box<double, int> obj2(100.54,5);
+    box<string, char> obj3("bibhu","A");
+
+    obj1.display();
+     obj2.display();
+      obj3.display();
+    return 0;
+}
