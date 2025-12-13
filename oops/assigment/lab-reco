@@ -1,4 +1,3 @@
-
 1 WAP in C++ to create a class called as student. Data members are rollno, name & fees of the student. Write appropriate get () & put () functions to scan and display the student data.
 2 WAP in C++ to create a class called as employee. Data members are eid, sal& name of the employee. Scan the data for 10 such employees & display the same by using array of objects.
 3 WAP in C++ to create a class called as Book. Data members are name of the Book & price. Write Default, parameterized & copy constructors to initialize & display Book object values.
@@ -8,12 +7,14 @@
 7 WAP in C++ to create a class called as Distance, members are ft & in. Assign appropriate values to objects D1 & D2 and add their values by overloading binary+operator to store the result in D3.
 8 WAP to overload operator to add complex number using friend function.
 9 Write a Program to demonstrate Static Data Members and Static Member Functions in C++
-10 WAP in C++ to create a class called as student, having member as roll_no& name of the student. Create another class Exam having members as mark1 & mark2. Finally create a class called result which is derived from student & Exam. Write a show function in it to show student info & percentage of marks scored using Multiple Inheritance. 11 Write a C++ program to demonstrate hierarchical inheritance.
-Create a base class Person and two derived classes Student and Employee. Accept and display details for both classes separately.
+10 WAP in C++ to create a class called as student, having member as roll_no& name of the student. Create another class Exam having members as mark1 & mark2. Finally create a class called result which is derived from student & Exam. Write a show function in it to show student info & percentage of marks scored using Multiple Inheritance. 
+11 Write a C++ program to demonstrate hierarchical inheritance. Create a base class Person and two derived classes Student and Employee. Accept and display details for both classes separately.
 12 WAP in C++ to demonstrate Derived class constructor.
 13 WAP in C++ to implement friend function acting as a bridge between the two classes.
-14 WAP in C++ to implement Virtual function for function overriding. 15 Write a C++ program to demonstrate runtime polymorphism using virtual functions. Create an abstract base class Shape that contains a pure virtual function area (). Derive classes Circle and Rectangle from Shape and override the area () function in each derived class to calculate and display the area of the respective shapes. 16 WAP in C++ to overload insertion (>>) & extraction (<<) operators for objects
-17 WAP to Demonstrate the Use of new and delete Operators in C++ 18 WAP to implement function Template.
+14 WAP in C++ to implement Virtual function for function overriding. 
+15 Write a C++ program to demonstrate runtime polymorphism using virtual functions. Create an abstract base class Shape that contains a pure virtual function area (). Derive classes Circle and Rectangle from Shape and override the area () function in each derived class to calculate and display the area of the respective shapes. 
+16 WAP in C++ to overload insertion (>>) & extraction (<<) operators for objects
+17 WAP to Demonstrate the Use of new and delete Operators in C++ 
+18 WAP to implement function Template.
 19 Write a C++ program to demonstrate the concept of Exception Handling using try, catch, and throw keywords. The program should accept two numbers from the user and perform division. If the denominator is zero, an exception should be thrown and handled appropriately to display an error message instead of terminating the program.
-20 Write a C++ program to demonstrate the use of Command Line Arguments. The program should accept two integer values from the command line and display their sum.
-If the required number of arguments is not provided, display an appropriate error message.
+20 Write a C++ program to demonstrate the use of Command Line Arguments. The program should accept two integer values from the command line and display their sum. If the required number of arguments is not provided, display an appropriate error message.
