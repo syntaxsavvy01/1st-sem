@@ -1,0 +1,36 @@
+                        LAB Index
+1. Implementation of different types of Joins:
+  a. Inner Join
+  b. Outer Join
+  c. Natural Join
+2. Create a Database of Library Management System.
+3. Study & Implementation of different types of constraints.
+4. Implementation of different types of function with suitable examples:
+  a. Number function
+  b. Aggregate Function
+  c. Date Function
+5. Apply set operation on database design
+6. Study & Implementation of:
+  a. Group by & Having Clause
+  b. Order by Clause
+I
+7. Study & Implementation of:
+  a. Views
+8. Implementation of DDL commands of SQL with suitable examples:
+  a. Create table
+  b. Alter table
+  c. Drop Table
+9. Study and Implementation of Rollback, Commit, Save point.
+English (Indial
+Arreccihilihe Good tone
+10. Implementation of DML commands of SQL with suitable examples:
+  a. Insert
+  b. Update
+  c. Delete
+11. Write PL/SQL program to swap two numbers.
+12. Write PL/SQL program to reverse the string.
+13. Write PL/SQL program to find the greatest of two number by taking user input,
+14. Write PL/SQL program to find palindrome of number by taking user input.
+15. Create a procedure to insert a new record into the employee table.
+16.. Write a PL/SQL program using an explicit cursor to display the name and salary of each employee from the EMPLOYEE table.
+17. Write a PL/SQL stored function named getTotalSal that returns the total salary of all employees whose age is greater than 20.
